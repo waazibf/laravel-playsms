@@ -4,12 +4,6 @@
     "type": "library",
     "keywords": ["sms","laravel5","playsms"],
     "license": "GPL-3.0+",
-    "authors": [
-        {
-            "name": "Ionut Morar",
-            "email": "ionut@infoacademy.net"
-        }
-    ],
     "require": {
         "php": ">=5.6.0",
         "illuminate/support": "4.*"
