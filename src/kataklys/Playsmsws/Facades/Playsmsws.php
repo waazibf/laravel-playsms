@@ -1,4 +1,6 @@
-<?php namespace Javierslzrh\Playsmsws\Facades;
+<?php
+
+namespace kataklys\Playsmsws\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
