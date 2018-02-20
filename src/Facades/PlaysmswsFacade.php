@@ -1,8 +1,10 @@
-<?php namespace Javierslzrh\Playsmsws\Facades;
+<?php
+
+namespace kataklys\Playsmsws\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Playsmsws extends Facade {
+class PlaysmswsFacade extends Facade {
 
 	protected static function getFacadeAccessor()
 	{

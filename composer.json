@@ -1,13 +1,13 @@
 {
-    "name": "javierslzrh/playsmsws",
-    "description": "PlaySMS API for Laravel 4",
+    "name": "kataklys/playsmsws",
+    "description": "PlaySMS API for Laravel 5",
     "type": "library",
-    "keywords": ["sms","laravel4","playsms"],
+    "keywords": ["sms","laravel5","playsms"],
     "license": "GPL-3.0+",
     "authors": [
         {
-            "name": "Javier Salazar",
-            "email": "javierslzrh@gmail.com"
+            "name": "Ionut Morar",
+            "email": "ionut@infoacademy.net"
         }
     ],
     "require": {
@@ -15,9 +15,22 @@
         "illuminate/support": "4.*"
     },
     "autoload": {
-        "psr-0": {
-            "Javierslzrh\\Playsmsws": "src/"
-        }
+        "psr-4": {
+            "kataklys\\Playsmsws": "src/"
+        },
+        "files": [
+          "src/functions.php"
+        ]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kataklys\\Playsmsws\\PlaysmswsServiceProvider"
+            ],
+            "aliases": {
+                "Playsmsws": "kataklys\\Playsmsws\\Facades\\PlaysmswsFacade"
+            }
+        }
+    }
 }

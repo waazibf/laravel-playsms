@@ -1,8 +1,11 @@
-<?php namespace Javierslzrh\Playsmsws;
+<?php
+
+namespace kataklys\Playsmsws;
 
 use Illuminate\Support\ServiceProvider;
 
-class PlaysmswsServiceProvider extends ServiceProvider {
+class PlaysmswsServiceProvider extends ServiceProvider
+{
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -12,9 +15,9 @@ class PlaysmswsServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	public function boot()
-    {
-        $this->package('javierslzrh/playsmsws');
-    }
+	{
+		$this->package('kataklys/playsmsws');
+	}
 
 	/**
 	 * Register the service provider.
@@ -23,7 +26,7 @@ class PlaysmswsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['playsmsws'] = $this->app->share(function($app){
+		$this->app['playsmsws'] = $this->app->share(function ($app) {
 			return new Playsmsws(\Config::get('playsmsws::config'));
 		});
 	}

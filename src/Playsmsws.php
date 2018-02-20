@@ -1,4 +1,6 @@
-<?php namespace Javierslzrh\Playsmsws;
+<?php
+
+namespace kataklys\Playsmsws;
 
 class Playsmsws {
 
