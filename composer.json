@@ -29,7 +29,7 @@
                 "kataklys\\Playsmsws\\PlaysmswsServiceProvider"
             ],
             "aliases": {
-                "Playsmsws": "kataklys\\Playsmsws\\SmsApiFacade"
+                "Playsmsws": "kataklys\\Playsmsws\\Facades\\PlaysmswsFacade"
             }
         }
     }
