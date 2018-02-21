@@ -26,7 +26,7 @@ class PlaysmswsServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$this->app['playsmsws'] = $this->app->share(function ($app) {
+		$this->app->bind('playsmsws', function ($app) {
 			return new Playsmsws(\Config::get('playsmsws::config'));
 		});
 	}
