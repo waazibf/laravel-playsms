@@ -16,7 +16,9 @@ class PlaysmswsServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		
+		$this->publishes([
+			__DIR__.'/config/playsmsws.php' => config_path('playsmsws.php'),
+		]);
 	}
 
 	/**
