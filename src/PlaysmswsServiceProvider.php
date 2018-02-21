@@ -12,11 +12,11 @@ class PlaysmswsServiceProvider extends ServiceProvider
 	 *
 	 * @var bool
 	 */
-	protected $defer = false;
+	protected $defer = true;
 
 	public function boot()
 	{
-		$this->package('kataklys/playsmsws');
+		
 	}
 
 	/**
@@ -38,7 +38,7 @@ class PlaysmswsServiceProvider extends ServiceProvider
 	 */
 	public function provides()
 	{
-		return array('playsmsws');
+		return [Playsmsws::class];
 	}
 
 }
