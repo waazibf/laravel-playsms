@@ -11,7 +11,7 @@ if (! function_exists('playsmsws_send')) {
      */
     function playsmsws_send($to = null, $message = null, $extra_params=[])
     {
-        $playsmsws = app('playsmsws');
+        $playsmsws = app('kataklys\Playsmsws\Playsmsws');
         if (!is_null($to) && !is_null($message)) {
             $playsmsws->to = $to;
             $playsmsws->msg = $message;

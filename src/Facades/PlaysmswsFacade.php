@@ -8,7 +8,7 @@ class PlaysmswsFacade extends Facade {
 
 	protected static function getFacadeAccessor()
 	{
-		return 'playsmsws';
+		return 'kataklys\Playsmsws\Playsmsws';
 	}
 }
 

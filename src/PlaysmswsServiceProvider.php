@@ -28,8 +28,8 @@ class PlaysmswsServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$this->app->bind('playsmsws', function ($app) {
-			return new Playsmsws(\Config::get('playsmsws::config'));
+		$this->app->bind('kataklys\Playsmsws\Playsmsws', function ($app) {
+			return new Playsmsws();
 		});
 	}
 
