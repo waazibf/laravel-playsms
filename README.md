@@ -33,7 +33,7 @@ php artisan vendor:publish --provider="kataklys\Playsmsws\PlaysmswsServiceProvid
 ```
 
 ## Configuration
-Once the config file is published, open `config/playsmsws.php`
+Once the config file is published, open `config/playsmsws.php` and set your desired values for the parameters:
 
 #### URL
 FIXME
