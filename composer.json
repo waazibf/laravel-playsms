@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "waazi\\Playsmsws\\": "src/"
+            "waazibf\\Playsmsws\\": "src/"
         },
         "files": [
             "src/helpers.php"
