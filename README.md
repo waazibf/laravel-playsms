@@ -6,7 +6,7 @@ Laravel 9 PlaySMS API Integration
 
 ### Install Package
 ```
-composer require waazibf/laravel-playsms
+composer require waazibf/laravel-playsmsws
 ```      
 ### Add Service Provider & Facade
 
