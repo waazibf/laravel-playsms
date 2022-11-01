@@ -1,4 +1,6 @@
-<?php namespace Javierslzrh\Playsmsws;
+<?php 
+
+namespace waazibf\Playsmsws;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -9,11 +11,13 @@ class PlaysmswsServiceProvider extends ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = false;
+	protected $defer = true;
 
 	public function boot()
     {
-        $this->package('javierslzrh/playsmsws');
+        $this->publishes([
+			__DIR__.'/config/playsmsws.php' => config_path('playsmsws.php'),
+		]);
     }
 
 	/**
@@ -23,8 +27,8 @@ class PlaysmswsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['playsmsws'] = $this->app->share(function($app){
-			return new Playsmsws(\Config::get('playsmsws::config'));
+		$this->app->bind('waazibf\Playsmsws\Playsmsws', function ($app) {
+			return new Playsmsws();
 		});
 	}
 
@@ -35,7 +39,7 @@ class PlaysmswsServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('playsmsws');
+		return [Playsmsws::class];
 	}
 
 }

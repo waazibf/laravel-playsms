@@ -1,23 +1,36 @@
 {
-    "name": "javierslzrh/playsmsws",
-    "description": "PlaySMS API for Laravel 4",
+    "name": "waazibf/playsmsws",
+    "description": "PlaySMS API for Laravel",
     "type": "library",
-    "keywords": ["sms","laravel4","playsms"],
+    "keywords": ["sms","laravel","playsms"],
     "license": "GPL-3.0+",
     "authors": [
         {
-            "name": "Javier Salazar",
-            "email": "javierslzrh@gmail.com"
+            "name": "Abdoul Aziz WELGO",
+            "email": "abdoulazizwelgo@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.*"
+        "php": "^7.2",
+        "illuminate/support": "^5|^6|^7|^8|^9"
     },
     "autoload": {
-        "psr-0": {
-            "Javierslzrh\\Playsmsws": "src/"
-        }
+        "psr-4": {
+            "waazi\\Playsmsws\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "waazibf\\Playsmsws\\PlaysmswsServiceProvider"
+            ],
+            "aliases": {
+                "Playsmsws": "waazibf\\Playsmsws\\Facades\\PlaysmswsFacade"
+            }
+        }
+    }
 }
