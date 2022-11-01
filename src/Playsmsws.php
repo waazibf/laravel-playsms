@@ -42,7 +42,7 @@ class Playsmsws
 	private $status;
 	private $error;
 	private $error_string;
-
+	
     // playSMS Webservices operation parameters
 	public $url;
 	public $token;

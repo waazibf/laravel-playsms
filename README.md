@@ -2,7 +2,6 @@ laravel-playsmsws
 ===============
 Laravel 9 PlaySMS API Integration
 
-
 ## Installation
 
 ### Install Package

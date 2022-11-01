@@ -4,7 +4,8 @@ namespace waazibf\Playsmsws;
 
 use Illuminate\Support\ServiceProvider;
 
-class PlaysmswsServiceProvider extends ServiceProvider {
+class PlaysmswsServiceProvider extends ServiceProvider
+{
 
 	/**
 	 * Indicates if loading of the provider is deferred.
