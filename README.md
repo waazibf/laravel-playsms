@@ -1,4 +1,4 @@
-laravel-playsmsws
+laravel-playsms
 ===============
 Laravel 9 PlaySMS API Integration
 
