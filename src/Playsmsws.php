@@ -330,9 +330,11 @@ class Playsmsws
 	 *
 	 * @return mixed
 	 */
-	public function sendSms()
+	public function sendSms($to, $msg)
 	{
 		$this->operation = 'pv';
+		$this->to = $to;
+		$this->msg = $msg;
 		$this->_Fetch();
 		if (empty($this->error_string)) {
 			return $this->_Populate();
