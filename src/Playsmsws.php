@@ -76,8 +76,8 @@ class Playsmsws
 	{
 		$this->_setWebservicesUrl();
 
-//        $response = file_get_contents($this->getWebservicesUrl()); --> not working for shared hosting
-		$ch = curl_init();
+	    $response = @file_get_contents($this->getWebservicesUrl());
+		/* $ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $this->getWebservicesUrl());
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
@@ -93,7 +93,7 @@ class Playsmsws
 				$this->error_string = "HTTP error code $httpcode";
 			}
 		}
-		curl_close($ch);
+		curl_close($ch); */
 		$this->response = $response;
 	}
 
